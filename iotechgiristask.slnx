@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="iotechgiristask/iotechgiristask.csproj" />
+  <Project Path="iotechgiristaskclient/iotechgiristaskclient.csproj" />
+  <Project Path="iotechgiristaskmonitor/iotechgiristaskmonitor.csproj" />
+</Solution>

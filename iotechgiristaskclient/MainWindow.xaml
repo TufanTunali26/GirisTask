@@ -1,0 +1,32 @@
+<Window x:Class="iotechgiristaskclient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IOTECH - Client Uygulaması" Height="320" Width="400"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Client Kontrol Paneli" FontSize="18" FontWeight="Bold" Margin="0,0,0,15" HorizontalAlignment="Center"/>
+
+        <!-- 1- Lamba Butonu -->
+        <Button x:Name="BtnLamp" Grid.Row="1" Content="Lamba: Durum Bekleniyor" 
+                FontSize="16" FontWeight="Bold" Margin="0,0,0,15"
+                Background="#9E9E9E" Foreground="White"
+                Click="BtnLamp_Click"/>
+
+        <!-- 2- Text Butonu -->
+        <Button x:Name="BtnText" Grid.Row="2" Content="Rastgele Sayı: Bekleniyor..." 
+                FontSize="16" FontWeight="Bold" Margin="0,0,0,15"
+                Background="#E0E0E0" Foreground="#212121"
+                Click="BtnText_Click"/>
+
+        <!-- Bağlantı Durumu -->
+        <TextBlock x:Name="TxtStatus" Grid.Row="3" Text="Server'a bağlanıyor..." 
+                   FontSize="12" Foreground="#666666" HorizontalAlignment="Center"/>
+    </Grid>
+</Window>
